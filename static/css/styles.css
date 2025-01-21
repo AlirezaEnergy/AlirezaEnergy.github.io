@@ -256,10 +256,6 @@ nav ul li a:hover {
     margin: 0px auto; /* Center the image horizontally */
 }
 
-#project-1-img{
-    max-width: 50%; /* Optional: Ensure the image doesn't overflow its container */
-}
-
 .project-details p{
     text-align: justify;
 }
