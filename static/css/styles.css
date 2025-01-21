@@ -68,7 +68,7 @@ nav ul li a:hover {
 
 .pic-container{
     height: 70%;
-    max-height: 500px;
+    max-height: 380px;
     width: auto;
     margin-bottom: 10px;
 }
@@ -185,8 +185,10 @@ nav ul li a:hover {
 }
 
 .degrees{
-    padding: 0px 0px 0px 25px;
+    padding: 0px 0px 0px 20px;
     margin-top: 0px;
+    margin-left: 20px;
+    border: 2px solid black;
 }
 
 /*portfolio*/
