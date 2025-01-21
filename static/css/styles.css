@@ -1,0 +1,448 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    text-shadow: -2px -2px 5px white;
+}
+
+#resume-link {
+    margin-left: auto;
+}
+
+/* Media query for small screens */
+@media (max-width: 550px) {
+    nav ul {
+        flex-direction: column; /* Stack the items vertically */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for vertical alignment */
+    }
+}
+
+/* Home */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.pic-container{
+    height: 70%;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.profile-pic{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.intro-text {
+    max-width: 800px;
+}
+
+.intro-text h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.intro-text p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Skills */
+
+* {
+    box-sizing: border-box; /* Apply box-sizing to all elements */
+}
+
+#skills {
+    padding: 10px 20px;
+
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center the .skills-container vertically */
+    align-items: center;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 2.5em;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-evenly; /* Evenly space skill items */
+    align-items: center; /* Align skill items vertically in the center */
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 700px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column; /* Stack the image and text vertically */
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    flex: 1;
+    margin: 0 10px;
+    width: 30%;
+    max-width: 400px;
+    text-align: center; /* Center the text inside each skill item */
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.skill-item:hover{
+    box-shadow: -4px -4px 5px grey;
+    border: 0.5px solid grey;
+}
+
+.skill-item img {
+    max-width: 100%; /* Ensure the image is responsive and fits the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+.skill-item p{
+    text-align: center;
+}
+
+/*Education*/
+
+#education{
+    padding: 0px;
+
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center the .skills-container vertically */
+    align-items: center;
+    margin: auto; /* Center the section horizontally and vertically */
+}
+
+#education h2{
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-size: 2.5em;
+}
+
+.sub-header{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: grey;
+}
+
+.sub-header a{
+    text-decoration: underline;
+    color: grey;
+}
+
+.degrees{
+    padding: 10px;
+    margin-top: 0px;
+}
+
+/*portfolio*/
+
+#portfolio{
+    padding: 0px;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center the .skills-container vertically */
+    align-items: center;
+    margin: auto; /* Center the section horizontally and vertically */
+}
+
+#portfolio h2{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 2.5em;
+}
+
+.portfolio-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.project {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px; /* Reduce bottom padding to decrease gap */
+    font-weight: bold;
+    border: 1.5px solid rgb(203, 197, 197);
+    border-radius: 20px;
+}
+
+.project-title:hover{
+    box-shadow: -1px -1px 10px black;
+}
+
+.toggle-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 5px; /* Optional for rounded corners */
+    cursor: pointer;
+    font-size: 18px;
+    color: grey;
+}
+
+.project-details {
+    display: none; /* Hide details by default */
+    padding: 0px 30px 0px 30px; /* Reduce padding to decrease gap */
+    cursor: default;
+}
+
+.project-details img{
+    display: block; /* Make the image a block-level element */
+    margin: 0px auto; /* Center the image horizontally */
+}
+
+#project-1-img{
+    max-width: 50%; /* Optional: Ensure the image doesn't overflow its container */
+}
+
+.project-details p{
+    text-align: justify;
+}
+
+/*Blog*/
+
+#blog {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#blog h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 2.5em;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0px;
+    padding: 0px;
+    max-width: 700px;
+    height: 400px;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    padding: 0px 5px;
+    flex: 1;
+    margin: 0px 10px 0px 0px;
+    width: 30%;
+    max-width: 400px;
+    height: 85%; /* Fixed height for blog posts */
+    text-align: center;
+    border-radius: 10px;
+    
+    border: 0.5px solid grey;
+}
+
+.blog-post:hover{
+    box-shadow: -4px -4px 5px grey;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0px;
+    padding: 5px;
+}
+
+.blog-post a {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.blog-post a p{
+    margin: 0px;
+}
+
+.circle-buttons {
+    margin-top: 20px; /* Adjust the space between the posts and the circles */
+    text-align: center;
+}
+
+.circle {
+    display: inline-block;
+    width: 15px; /* Slightly larger for better visibility */
+    height: 15px;
+    margin: 0px 10px 10px; /* Increased spacing between circles */
+    background-color: #333; /* Dark color for visibility */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color change */
+}
+
+.blog-set-2 {
+    display: none; /* Hide the second set of blog posts initially */
+}
+
+/* Optional: Add active state to circles */
+.circle:hover {
+    background-color: #73c576; /* Change color on hover */
+}
+
+.circle.active {
+    background-color: #09ba0f; /* Active circle color */
+}
+
+/*Footer or contact me*/
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the flex items horizontally */
+    align-items: center; /* Aligns the flex items vertically */
+    gap: 20px; /* Adds space between the items */
+}
+
+#contact .email, 
+#contact .social-media {
+    padding: 5px;
+}
+
+#contact .social-media{
+    margin-bottom: 50px;
+}
+
+.social-media a {
+    text-decoration: none;
+    margin: 0 10px;
+
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+.social-media a i {
+    font-size: 2em; /* Set the initial size of the icons */
+    
+}
+
+.social-media a:hover {
+    transform: scale(1.25); /* Slightly enlarge the icon on hover */
+}
+
+/* blog page */
+#article{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.article-img img{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+}
+
+.article-text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 75%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+}
+
+.article-text p{
+    text-align: justify;
+    margin: 5px;
+}
+
+.homepage-butt{
+    background-color: black;
+    border-color: black;
+    border-radius: 10px;
+    width: 60px;
+    color: white;
+    margin-left: auto;
+    cursor: pointer;
+    margin-top: 20px;
+}

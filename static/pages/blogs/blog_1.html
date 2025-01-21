@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Energy Machine</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../../#skills">Skills</a></li>
+                <li><a href="../../../#portfolio">Portfolio</a></li>
+                <li><a href="../../../#blog">Blog</a></li>
+                <li><a href="../../../#contact">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/1zMY2hWXJ9EhiJ2OGEAzLMiRDbCXMllhf/view?usp=sharing" target="_blank" id="resume-link">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <main>
+        <section id="article">
+            <h1 style="font-size: 1.6em;">Why a Perpetual Motion Machine Won't Work?</h1>
+            <div class="article-img" style="width: 75%; max-width: 600px;">
+                <img src="../../img/Slide1.JPG">
+            </div>
+            <div class="article-text">
+                <p>Let's start with the First Law of Thermodynamics (Conservation of Energy) for a Generator:</p>
+                <p><i>E<sub>m</sub> = E<sub>g</sub> + Q<sub>g</sub></i></p>
+                <p>Thus, the efficiency of the generator is:</p>
+                <p><i>&#951;<sub>g</sub> = E<sub>g</sub> / E<sub>m</sub> = (E<sub>m</sub> - Q<sub>g</sub>) / E<sub>m</sub> = 1 - Q<sub>g</sub> / E<sub>m</sub></i></p>
+
+                <p>The First Law of Thermodynamics for a Motor:</p>
+                <p><i>E<sub>g</sub> = E<sub>m</sub> + Q<sub>m</sub></i></p>
+                <p>Thus, the efficiency of the motor is:</p>
+                <p><i>&#951;<sub>m</sub> = E<sub>m</sub> / E<sub>g</sub> = (E<sub>g</sub> - Q<sub>m</sub>) / E<sub>g</sub> = 1 - Q<sub>m</sub> / E<sub>g</sub></i></p>
+
+                <p>Substituting the first equation into the second:</p>
+                <p><i>E<sub>g</sub> = E<sub>g</sub> + Q<sub>g</sub> + Q<sub>m</sub> &#8658; Q<sub>g</sub> + Q<sub>m</sub> = 0</i></p>
+                <p>The losses can't be negative, so:</p>
+                <p><i>Q<sub>g</sub> = Q<sub>m</sub> = 0 &#8658; &#951;<sub>g</sub> = &#951;<sub>m</sub> = 1</i></p>
+
+                <p>However, according to the Second Law of Thermodynamics (Kelvin-Planck): <i>"It is impossible for any heat engine to convert all the heat taken from a hot source into work without some heat being rejected to a cooler source."</i> In simpler terms, a machine with 100% efficiency is as mythical as a unicorn.</p>
+
+                <p>Notice that the first law isn’t violated here. We concluded that for this system to work, all components must have 100% efficiency, meaning no losses. But then the second law crashes the party, saying, "No way, buddy! There will always be losses."</p>
+
+                <p>Now, let's see what kind of thermodynamics the person who claims this machine can work (and even light a few bulbs) is using. To have surplus energy, we need:</p>
+            </div>
+
+            <div class="article-img" style="width: 75%; max-width: 600px;">
+                <img src="../../img/Slide2.JPG">
+            </div>
+
+            <div class="article-text">
+                <p>As you can see, we don’t even need the first law here. Nothing enters the system's boundaries, but it still outputs energy! Now let’s apply the first law.</p>
+
+                <p>The First Law of Thermodynamics for a Generator:</p>
+                <p><i>E<sub>m</sub> = E<sub>g</sub> + Q<sub>g</sub> &#8658; E<sub>m</sub> = E<sub>g1</sub> + E<sub>g2</sub> + Q<sub>g</sub></i></p>
+
+                <p>For the Motor:</p>
+                <p><i>E<sub>g2</sub> = E<sub>m</sub> + Q<sub>m</sub></i></p>
+
+                <p>Substituting the second equation into the first:</p>
+                <p><i>E<sub>m</sub> = E<sub>m</sub> + Q<sub>m</sub> + E<sub>g2</sub> + Q<sub>g</sub> &#8658; Q<sub>m</sub> + E<sub>g2</sub> + Q<sub>g</sub> = 0</i></p>
+                <p>Since each term is non-negative, E<sub>g2</sub> must be zero.</p>
+
+                <p>For thoroughness, let’s rewrite the above equations assuming efficiency:</p>
+                <p>For the generator:</p>
+                <p><i>E<sub>g</sub> = &#951;<sub>g</sub> E<sub>m</sub> &#8658; E<sub>g1</sub> + E<sub>g2</sub> = &#951;<sub>g</sub> E<sub>m</sub></i></p>
+
+                <p>For the motor:</p>
+                <p><i>E<sub>m</sub> = &#951;<sub>m</sub> E<sub>g2</sub></i></p>
+
+                <p>Substituting the second equation into the first:</p>
+                <p><i>E<sub>g1</sub> + E<sub>g2</sub> = &#951;<sub>g</sub> &#951;<sub>m</sub> E<sub>g2</sub> (&#951;<sub>g</sub> &#951;<sub>m</sub> = &#951;<sub>system</sub></i>)&#8658;</p>
+
+                <p>E<sub>g1</sub> = (&#951;<sub>system</sub> - 1) E<sub>g2</sub></p>
+
+                <p>Since E<sub>g1</sub> is positive and we have surplus energy, the right side must be positive, resulting in &#951;<sub>system</sub> > 1!!!</p>
+
+                <p>Earlier, we said 100% efficiency is impossible. Now we have efficiency greater than 1, great! In this case, even the first law is violated because energy is being created from nothing.</p>
+
+                <p>Why is 100% Efficiency Impossible? The culprit is the second law of thermodynamics, which states that no process can occur without producing entropy. You can't reduce the total entropy of a system and its surroundings.</p>
+
+                <p>Why total? Because, for example, in a refrigerator, we lower the heat and entropy inside, but we dump more heat (since we consume electricity) into the surroundings. The increase in environmental entropy exceeds the decrease inside, so overall, entropy increases.</p>
+
+                <p>Entropy determines the direction of processes. See the image below:</p>
+            </div>
+
+            <div class="article-img" style="width: 75%; max-width: 600px;">
+                <img src="../../img/Slide3.JPG">
+            </div>
+
+            <div class="article-text">
+                <p style="font-size: 0.7em;">I made this picture when I was a teaching assistant in process engineering course.</p>
+
+                <p>We have a 45°C cup of tea in a 25°C environment, exchanging 10 joules of energy. No problem there, and the first law holds since: Energy lost from the tea = Energy gained by the environment (red equations) But why not write: Energy lost from the environment = Energy gained by the tea (blue equations)?</p>
+
+                <p>This is where the second law kicks in, showing that for the first case, the total entropy change is positive (meaning entropy is produced), while for the second, it’s negative. Hence, the second scenario is impossible.</p>
+
+                <p>How does this relate to our equations? By combining the first and second laws with exergy theory, we can write the exergy equation as:</p>
+                <p><i>EX<sub>in</sub> = EX<sub>out</sub> + EX<sub>loss</sub> + EX<sub>destruction</sub></i></p>
+
+                <p>As you can see, besides losses (part of the energy being lost), there’s another term, Destruction of exergy, caused by entropy production:</p>
+                <p><i>EX<sub>destruction</sub> = T<sub>0</sub>S<sub>g</sub></i> where T<sub>0</sub> is the environment's temperature in Kelvin and S<sub>g</sub> is the entropy produced. Since S<sub>g</sub> is always positive (zero for reversible processes, which are theoretical and never occur in practice), some energy is always destroyed.</p>
+
+                <p>In summary, this system violates both the first and second laws, and understanding it doesn’t require electrical circuit knowledge—just a bit of thermodynamics is enough! :))</p>
+                
+                <button class="homepage-butt">Home</button>
+            </div>
+
+        </section>
+    </main>
+
+
+    <hr style="width: 40%;">
+
+
+    <footer>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <div class="container">
+                <div class="email">
+                    <email style="font-weight: bold;">aghadertootoonchi@gmail.com</email>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/alireza-ghader-tootoonchi/" target="_blank" style="color: #0077b5;">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/alirezaenergy" target="_blank" style="color: black;">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=4-KxeswAAAAJ&hl=en" target="_blank" style="color: #0077b5;">
+                        <i class="fas fa-graduation-cap fa-2x"></i>
+                    </a>
+                    <a href="https://www.kaggle.com/alirezatootoonchi" target="_blank" style="color: goldenrod;">
+                        <i class="fas fa-trophy fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </section>        
+    </footer>
+
+
+    <script>
+        document.querySelector('.homepage-butt').addEventListener('click', function() {
+          window.location.href = '../../../index.html'; // Change this path as needed
+        });
+    </script>
+
+
+</body>
+</html>
