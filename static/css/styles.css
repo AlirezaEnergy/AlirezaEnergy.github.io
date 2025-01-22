@@ -260,6 +260,11 @@ nav ul li a:hover {
     text-align: justify;
 }
 
+.project-details li{
+    padding: 3px;
+    margin: 0px 0px 10px 0px;
+}
+
 /*Blog*/
 
 #blog {

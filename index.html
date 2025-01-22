@@ -63,7 +63,7 @@
                 </div>
                 <div class="skill-item">
                     <img src="static/img/dataanalysis.png">
-                    <p><strong>Data-driven Decision Making</strong></p>
+                    <p><strong>Data-driven Decision-Making</strong></p>
                 </div>
                 <div class="skill-item">
                     <img src="static/img/energyhub.png">
@@ -86,6 +86,17 @@
 
         <hr style="width: 40%;">
 
+        <section id="education">
+            <h2>Current Projects</h2>
+            <p class="sub-header">At the Intelligent and Interactive Building (IIB) Lab, University of Toronto.</p>
+            <ul class="degrees">
+                <li><p>Building cooling demand prediction using data-driven methods <p></li>
+                <li><p>Developing a digital twinning framework for vapor compression chillers and heat pumps</p></li>
+            </ul>
+        </section>
+
+        <hr style="width: 40%;">
+
         <section id="portfolio">
             <h2>Projects I did</h2>
             <div class="portfolio-container">
@@ -96,6 +107,7 @@
                     </div>
                     <div class="project-details">
                         <img src="static/img/pyomo-book.jpg" style="margin-top: 5px; width: 35%; max-width: 200px;">
+                        <p><strong>Published by:</strong><i> Springer-Nature</i></p>
                         <p>
                             This guide is all about using the Pyomo optimization package in Python to solve energy system challenges. 
                             It breaks down the basics of energy systems and shows how to apply Pyomo to optimize them, focusing on both 
@@ -116,6 +128,7 @@
                     </div>
                     <div class="project-details">
                         <img src="static/img/hybrid-optimization-algorithm.jpg" style="margin-top: 5px; width: 90%; max-width: 550px;">
+                        <p><strong>Published by:</strong><i> IEEE Transactions on Smart Grid</i></p>
                         <p>
                             Reinforcement learning (RL) is a subset of artificial intelligence in which a decision-making agent tries 
                             to act optimally in an environment by controlling different parameters. There is no need to identify and 
@@ -141,6 +154,7 @@
                     </div>
                     <div class="project-details">
                         <img src="static/img/miner-building.png" style="margin-top: 5px; width: 90%; max-width: 550px;">
+                        <p><strong>Published by:</strong><i> IET</i></p>
                         <p>
                             Cryptocurrencies are either mineable or non-mineable. Bitcoin, the most popular mineable one, uses a process 
                             called Proof of Work (PoW) to keep its network secure. Mining Bitcoin requires special devices called ASICs 
@@ -156,30 +170,51 @@
                 </div>
                 <div class="project">
                     <div class="project-title" onclick="toggleDetails(this)">
-                        Project Title 4
+                        Multi-objective stochastic optimization of a greenhouse energy system using an integrated demand-supply model
                         <span class="toggle-icon">+</span>
                     </div>
                     <div class="project-details">
+                        <img src="static/img/Multiobj-stoch-opt.jpg" style="margin-top: 5px; width: 90%; max-width: 550px;">
+                        <p><strong>Published by:</strong><i> IEEE</i></p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque atque dolor vitae! Cupiditate velit ipsam 
-                            corrupti earum magni. Vitae porro unde cum voluptates. Nulla alias magnam, rem dicta rerum impedit? Lorem 
-                            ipsum dolor sit amet consectetur adipisicing elit. Itaque atque dolor vitae! Cupiditate velit ipsam corrupti 
-                            earum magni. Vitae porro unde cum voluptates. Nulla alias magnam, rem dicta rerum impedit?
+                            With the growth in the population, the demand for food and agricultural products is increasing. Greenhouses 
+                            are a promising option to meet such a growing demand as they can provide a controlled environment for the 
+                            plant to grow. As a result, their performance highly depends on energy consumption. One of the main factors 
+                            that affect the energy demand of a greenhouse is the weather. This study aims to investigate the effects of 
+                            weather uncertainty on the planning and scheduling of a greenhouse energy system. To achieve this purpose, 
+                            a two-objective (cost and temperature stability) stochastic linear model is developed and solved using 
+                            historical data for the past 20 years of Tehran. The findings reveal that the deterministic approach 
+                            underestimates the capital and operational costs of the system by more than 700${\$}$ during the lifetime 
+                            of the greenhouse (20 years), and the underestimation rises with a growth in the importance of temperature 
+                            stability.
                         </p>
+                        <p><b>Utilized skills:</b> Programming, Optimization, Building energy performance, Multicarrier energy systems</p>
+                        <p>You can find the paper <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10631906">here.</a></p>
                     </div>
                 </div>
                 <div class="project">
                     <div class="project-title" onclick="toggleDetails(this)">
-                        Project Title 5
+                        Long- and Short-term Prediction of Bitcoin Energy Consumption
                         <span class="toggle-icon">+</span>
                     </div>
                     <div class="project-details">
+                        <img src="static/img/BTC-energy-prediction.jpg" style="margin-top: 5px; width: 90%; max-width: 550px;">
+                        <p><strong>Published by:</strong><i> IEEE</i></p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque atque dolor vitae! Cupiditate velit ipsam 
-                            corrupti earum magni. Vitae porro unde cum voluptates. Nulla alias magnam, rem dicta rerum impedit? Lorem 
-                            ipsum dolor sit amet consectetur adipisicing elit. Itaque atque dolor vitae! Cupiditate velit ipsam corrupti 
-                            earum magni. Vitae porro unde cum voluptates. Nulla alias magnam, rem dicta rerum impedit?
+                            Bitcoin”s (BTC) mining process utilizes the proof of work (PoW) concept as the consensus algorithm., which 
+                            consumes electricity. As a result., there are concerns regarding its sustainability and carbon emission. 
+                            If one wants to estimate these, they first should have an estimation of the network's energy consumption 
+                            which is hard to calculate due to its decentralized nature. To do so., two methods are conceivable. First, 
+                            considering electricity price and miner's revenue (electricity costs are considered as a part of total 
+                            revenue., then divided by electricity price to obtain electricity consumption), second, using hash rate 
+                            along with the efficiency of mining devices. The latter is utilized in this study for short- and long-term 
+                            predictions. In the short-term, recurrent neural network (RNN) is used, whereas in the long-term logistic 
+                            functions are applied. It has been concluded that the ultimate energy consumption of the Bitcoin network, 
+                            which will happen around 2025, is in the range of 40.4 to 73.41 TWh annually and its estimated value is 
+                            58.56 TWh.
                         </p>
+                        <p><b>Utilized skills:</b> Programming, Data-driven decision making</p>
+                        <p>You can find the paper <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10084150">here.</a></p>
                     </div>
                 </div>
                 <div class="project">
@@ -189,11 +224,11 @@
                     </div>
                     <div class="project-details">
                         <ul>
-                            <li>Project a</li>
-                            <li>Project b</li>
-                            <li>Project c</li>
-                            <li>Project d</li>
-                            <li>Project e</li>
+                            <li>The effect of energy subsidies on the sustainability of economy, society and environment : a case study of Iran [<a target="_blank" href="https://www.torrossa.com/it/resources/an/4944878">Link</a>] <br><strong>Skills:</strong> Energy system analysis, Data-driven decision-making</li>
+                            <li>Optimum planning and scheduling of a greenhouse water-energy hub in different climate conditions of Iran [<a target="_blank" href="https://epprjournal.ir/article-1-1067-en.html">Link</a>] <br><strong>Skills:</strong> Programming, Optimization, Building energy performance</li>
+                            <li>Implementing 2-phase SIMPLEX algorithm from scrath using the matrix form in MATLAB <br><strong>Skills:</strong> Programming, Optimization</li>
+                            <li>Energy and exergy simulation of Rankin and organic Rankin cycles <br><strong>Skills:</strong> Programming, Energy system analysis, Thermodynamic modeling</li>
+                            <li>Calibrating EnergyPlus model of a commercial building using historical data and Bayesian optimization <br><strong>Skills:</strong> Python Programming, Optimization, Building energy performance, Data-driven analysis</li>
                         </ul>
                     </div>
                 </div>
