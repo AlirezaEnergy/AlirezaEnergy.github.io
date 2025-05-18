@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alireza</title>
+    <meta name="description" content="Alireza's personal website showcasing projects, skills, and resume.">
+    <title>Alireza Ghadertootoonchi</title>
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" type="image/png" href="static/img/favicon.png">
+
+    <meta property="og:title" content="Alireza's Projects">
+    <meta property="og:description" content="Explore Alireza's projects, skills, and resume in energy systems modeling and optimization.">
+    <meta property="og:image" content="https://alirezaenergy.github.io/static/img/energyhub.png">
+    <meta property="og:url" content="https://alirezaenergy.github.io/">
+    <meta property="og:type" content="website">
+
 </head>
 <body>
     
@@ -15,10 +23,12 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#blog">Blog</a></li>
+                <li><a href="#webinars">Webinars</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="https://drive.google.com/file/d/1zMY2hWXJ9EhiJ2OGEAzLMiRDbCXMllhf/view?usp=sharing" target="_blank" id="resume-link">Resume</a></li>
+                <li><a href="https://drive.google.com/file/d/1zMY2hWXJ9EhiJ2OGEAzLMiRDbCXMllhf/view?usp=sharing" target="_blank" id="resume-link" rel="noopener noreferrer">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -76,7 +86,7 @@
 
         <section id="education">
             <h2>Education</h2>
-            <p class="sub-header">Please visit my <a href="https://drive.google.com/file/d/1zMY2hWXJ9EhiJ2OGEAzLMiRDbCXMllhf/view?usp=sharing" target="_blank">resume</a> for more information.</p>
+            <p class="sub-header">Please visit my <a href="https://drive.google.com/file/d/1zMY2hWXJ9EhiJ2OGEAzLMiRDbCXMllhf/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a> for more information.</p>
             <ul class="degrees">
                 <li><p><b>PhD Candidate in building energy performance</b>  (University of Toronto)</p></li>
                 <li><p><b>Master's Degree in Energy Systems Engineering</b>  (Sharif University of Technology)</p></li>
@@ -97,16 +107,16 @@
 
         <hr style="width: 40%;">
 
-        <section id="portfolio">
+        <section id="projects">
             <h2>Projects I did</h2>
-            <div class="portfolio-container">
+            <div class="projects-container">
                 <div class="project">
                     <div class="project-title" onclick="toggleDetails(this)">
                         Developing an energy system optimization model using python
                         <span class="toggle-icon">+</span>
                     </div>
                     <div class="project-details">
-                        <img src="static/img/pyomo-book.jpg" style="margin-top: 5px; width: 35%; max-width: 200px;">
+                        <img src="static/img/pyomo-book.jpg" style="margin-top: 5px; width: 35%; max-width: 200px;" loading="lazy">
                         <p><strong>Published by:</strong><i> Springer-Nature</i></p>
                         <p>
                             This guide is all about using the Pyomo optimization package in Python to solve energy system challenges. 
@@ -118,7 +128,7 @@
                         </p>
                         <p><b>Utilized skills:</b> Python programming, Optimization, Renewable energy integration, Multicarrier energy systems</p>
                         <p>The Python code and an Excel file used as the user interface are available on <a target="_black" href="https://github.com/AlirezaEnergy/optimization/tree/master/pyomo/EcoEnvironmental%20Power%20Network%20MILP%20Optimization%20Model">GitHub.</a></p>
-                        <p>You can find the book <a href="https://link.springer.com/book/10.1007/978-3-031-65906-5" target="_blank">here.</a></p>
+                        <p>You can find the book <a href="https://link.springer.com/book/10.1007/978-3-031-65906-5" target="_blank" rel="noopener noreferrer">here.</a></p>
                     </div>
                 </div>
                 <div class="project">
@@ -127,7 +137,7 @@
                         <span class="toggle-icon">+</span>
                     </div>
                     <div class="project-details">
-                        <img src="static/img/hybrid-optimization-algorithm.jpg" style="margin-top: 5px; width: 90%; max-width: 550px;">
+                        <img src="static/img/hybrid-optimization-algorithm.jpg" style="margin-top: 5px; width: 90%; max-width: 550px;" loading="lazy">
                         <p><strong>Published by:</strong><i> IEEE Transactions on Smart Grid</i></p>
                         <p>
                             Reinforcement learning (RL) is a subset of artificial intelligence in which a decision-making agent tries 
@@ -144,7 +154,7 @@
                             in converging to the global optimum with more than 95% accuracy.
                         </p>
                         <p><b>Utilized skills:</b> Python programming, Optimization, Renewable energy integration, Building energy performance, Data-driven decision making, Multicarrier energy systems</p>
-                        <p>You can find the paper <a target="_blank" href="https://ieeexplore.ieee.org/document/9852798">here.</a></p>
+                        <p>You can find the paper <a target="_blank" href="https://ieeexplore.ieee.org/document/9852798" rel="noopener noreferrer">here.</a></p>
                     </div>
                 </div>
                 <div class="project">
@@ -153,7 +163,7 @@
                         <span class="toggle-icon">+</span>
                     </div>
                     <div class="project-details">
-                        <img src="static/img/miner-building.png" style="margin-top: 5px; width: 90%; max-width: 550px;">
+                        <img src="static/img/miner-building.png" style="margin-top: 5px; width: 90%; max-width: 550px;" loading="lazy">
                         <p><strong>Published by:</strong><i> IET</i></p>
                         <p>
                             Cryptocurrencies are either mineable or non-mineable. Bitcoin, the most popular mineable one, uses a process 
@@ -165,7 +175,7 @@
                             hours. As electricity prices rise during peak times, the ITS system becomes even more useful in saving money.
                         </p>
                         <p><b>Utilized skills:</b> Python programming, Optimization, Building energy performance</p>
-                        <p>You can find the paper <a target="_blank" href="https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/enc2.12085">here.</a></p>
+                        <p>You can find the paper <a target="_blank" href="https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/enc2.12085" rel="noopener noreferrer">here.</a></p>
                     </div>
                 </div>
                 <div class="project">
@@ -174,7 +184,7 @@
                         <span class="toggle-icon">+</span>
                     </div>
                     <div class="project-details">
-                        <img src="static/img/Multiobj-stoch-opt.jpg" style="margin-top: 5px; width: 90%; max-width: 550px;">
+                        <img src="static/img/Multiobj-stoch-opt.jpg" style="margin-top: 5px; width: 90%; max-width: 550px;" loading="lazy">
                         <p><strong>Published by:</strong><i> IEEE</i></p>
                         <p>
                             With the growth in the population, the demand for food and agricultural products is increasing. Greenhouses 
@@ -189,7 +199,7 @@
                             stability.
                         </p>
                         <p><b>Utilized skills:</b> Programming, Optimization, Building energy performance, Multicarrier energy systems</p>
-                        <p>You can find the paper <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10631906">here.</a></p>
+                        <p>You can find the paper <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10631906" rel="noopener noreferrer">here.</a></p>
                     </div>
                 </div>
                 <div class="project">
@@ -198,7 +208,7 @@
                         <span class="toggle-icon">+</span>
                     </div>
                     <div class="project-details">
-                        <img src="static/img/BTC-energy-prediction.jpg" style="margin-top: 5px; width: 90%; max-width: 550px;">
+                        <img src="static/img/BTC-energy-prediction.jpg" style="margin-top: 5px; width: 90%; max-width: 550px;" loading="lazy">
                         <p><strong>Published by:</strong><i> IEEE</i></p>
                         <p>
                             Bitcoin”s (BTC) mining process utilizes the proof of work (PoW) concept as the consensus algorithm., which 
@@ -214,7 +224,7 @@
                             58.56 TWh.
                         </p>
                         <p><b>Utilized skills:</b> Programming, Data-driven decision making</p>
-                        <p>You can find the paper <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10084150">here.</a></p>
+                        <p>You can find the paper <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10084150" rel="noopener noreferrer">here.</a></p>
                     </div>
                 </div>
                 <div class="project">
@@ -224,8 +234,8 @@
                     </div>
                     <div class="project-details">
                         <ul>
-                            <li>The effect of energy subsidies on the sustainability of economy, society and environment : a case study of Iran [<a target="_blank" href="https://www.torrossa.com/it/resources/an/4944878">Link</a>] <br><strong>Skills:</strong> Energy system analysis, Data-driven decision-making</li>
-                            <li>Optimum planning and scheduling of a greenhouse water-energy hub in different climate conditions of Iran [<a target="_blank" href="https://epprjournal.ir/article-1-1067-en.html">Link</a>] <br><strong>Skills:</strong> Programming, Optimization, Building energy performance</li>
+                            <li>The effect of energy subsidies on the sustainability of economy, society and environment : a case study of Iran [<a target="_blank" rel="noopener noreferrer" href="https://www.torrossa.com/it/resources/an/4944878">Link</a>] <br><strong>Skills:</strong> Energy system analysis, Data-driven decision-making</li>
+                            <li>Optimum planning and scheduling of a greenhouse water-energy hub in different climate conditions of Iran [<a target="_blank" rel="noopener noreferrer" href="https://epprjournal.ir/article-1-1067-en.html">Link</a>] <br><strong>Skills:</strong> Programming, Optimization, Building energy performance</li>
                             <li>Implementing 2-phase SIMPLEX algorithm from scrath using the matrix form in MATLAB <br><strong>Skills:</strong> Programming, Optimization</li>
                             <li>Energy and exergy simulation of Rankin and organic Rankin cycles <br><strong>Skills:</strong> Programming, Energy system analysis, Thermodynamic modeling</li>
                             <li>Calibrating EnergyPlus model of a commercial building using historical data and Bayesian optimization <br><strong>Skills:</strong> Python Programming, Optimization, Building energy performance, Data-driven analysis</li>
@@ -242,19 +252,19 @@
             <p class="sub-header">Select to see more details.</p>
             <div class="blog-container">
                 <div class="blog-post">
-                    <a href="static/pages/blogs/blog_1.html" target="_blank">
+                    <a href="static/pages/blogs/blog_1.html">
                         <img src="static/img/infinite energy machine.jpg">
                         <p>What is an infinite energy machine, and why does it only work in the imagination of over-enthusiastic inventors and sci-fi writers?</p>
                     </a>
                 </div>
                 <div class="blog-post">
-                    <a href="blog2.html" target="_blank">
+                    <a href="blog2.html">
                         <img src="static/img/bep.png">
                         <p>Brief discussion about the first blog post...Brief discussion about the first blog post...Brief discussion about the first blog post...</p>
                     </a>
                 </div>
                 <div class="blog-post">
-                    <a href="blog3.html" target="_blank">
+                    <a href="blog3.html">
                         <img src="static/img/python.png">
                         <p>Brief discussion about the first blog post...Brief discussion about the first blog post...Brief discussion about the first blog post...</p>
                     </a>
@@ -264,19 +274,19 @@
             <!-- Second set of Blog Rectangles (Initially Hidden) -->
             <div class="blog-container blog-set-2">
                 <div class="blog-post">
-                    <a href="blog4.html" target="_blank">
+                    <a href="blog4.html">
                         <img src="static/img/energyhub.png">
                         <p>Brief discussion about the fourth blog post...</p>
                     </a>
                 </div>
                 <div class="blog-post">
-                    <a href="blog5.html" target="_blank">
+                    <a href="blog5.html">
                         <img src="static/img/renewable.png">
                         <p>Brief discussion about the fifth blog post...</p>
                     </a>
                 </div>
                 <div class="blog-post">
-                    <a href="blog6.html" target="_blank">
+                    <a href="blog6.html">
                         <img src="static/img/dataanalysis.png">
                         <p>brief discussion about the sixth blog post...</p>
                     </a>
@@ -289,9 +299,31 @@
                 <span class="circle" onclick="togglePosts(2)"></span>
             </div>
             <!--
-            <a href="blog.html" target="_blank" style="text-decoration: underline; color: #333; margin-bottom: 20px;">All articles</a>
+            <a href="blog.html" style="text-decoration: underline; color: #333; margin-bottom: 20px;">All articles</a>
             -->
         </section>
+
+        <hr style="width: 40%;">
+
+        <section id="webinars">
+            <h2>Webinars</h2>
+            <div class="webinars-container">
+                <div class="webinars-post">
+                    <img src="static/img/Optimization_webinar.png">
+                    <p>This webinar, attended by over 50 participants, introduced the use of Python’s <strong>Pyomo library for energy system optimization</strong> problems.</p>
+                </div>
+                <div class="webinars-post">
+                    <img src="static/img/BC_webinar.png">
+                    <p>This webinar, attended by over 45 participants, was about the fundamentals of <strong>blockchain technology and its applications in the energy sector</strong>.</p>
+                </div>
+                <div class="webinars-post">
+                    <img src="static/img/PhD_webinar.png">
+                    <p>This webinar, attended by over 120 participants, discussed the process of searching for and <strong>securing PhD positions</strong> in North America.</p>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
 
@@ -302,20 +334,21 @@
         <section id="contact">
             <h2>Get in Touch</h2>
             <div class="container">
-                <div class="email">
-                    <email style="font-weight: bold;">aghadertootoonchi@gmail.com</email>
-                </div>
+                <address class="email">
+                    <p><a href="mailto:aghadertootoonchi@gmail.com"><strong>aghadertootoonchi@gmail.com</strong></a></p>
+                    <p><a href="mailto:a.ghadertootoonchi@mail.utoronto.ca"><strong>a.ghadertootoonchi@mail.utoronto.ca</strong></a></p>
+                </address>
                 <div class="social-media">
-                    <a href="https://www.linkedin.com/in/alireza-ghader-tootoonchi/" target="_blank" style="color: #0077b5;">
+                    <a href="https://www.linkedin.com/in/alireza-ghader-tootoonchi/" target="_blank" rel="noopener noreferrer" style="color: #0077b5;">
                         <i class="fab fa-linkedin fa-2x"></i>
                     </a>
-                    <a href="https://github.com/alirezaenergy" target="_blank" style="color: black;">
+                    <a href="https://github.com/alirezaenergy" target="_blank" rel="noopener noreferrer" style="color: black;">
                         <i class="fab fa-github fa-2x"></i>
                     </a>
-                    <a href="https://scholar.google.com/citations?user=4-KxeswAAAAJ&hl=en" target="_blank" style="color: #0077b5;">
+                    <a href="https://scholar.google.com/citations?user=4-KxeswAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" style="color: #0077b5;">
                         <i class="fas fa-graduation-cap fa-2x"></i>
                     </a>
-                    <a href="https://www.kaggle.com/alirezatootoonchi" target="_blank" style="color: goldenrod;">
+                    <a href="https://www.kaggle.com/alirezatootoonchi" target="_blank" rel="noopener noreferrer" style="color: goldenrod;">
                         <i class="fas fa-trophy fa-2x"></i>
                     </a>
                 </div>

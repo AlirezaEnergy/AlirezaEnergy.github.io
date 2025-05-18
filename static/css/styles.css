@@ -190,9 +190,9 @@ nav ul li a:hover {
     margin-left: 20px;
 }
 
-/*portfolio*/
+/*projects*/
 
-#portfolio{
+#projects{
     padding: 0px;
     display: flex; /* Use flexbox for centering */
     flex-direction: column; /* Stack items vertically */
@@ -201,14 +201,14 @@ nav ul li a:hover {
     margin: auto; /* Center the section horizontally and vertically */
 }
 
-#portfolio h2{
+#projects h2{
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
     font-size: 2.5em;
 }
 
-.portfolio-container {
+.projects-container {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
@@ -361,6 +361,67 @@ nav ul li a:hover {
     background-color: #09ba0f; /* Active circle color */
 }
 
+/*webinars*/
+
+#webinars {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#webinars h2 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-size: 2.5em;
+}
+
+.webinars-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0px;
+    padding: 0px;
+    max-width: 700px;
+    height: 400px;
+}
+
+.webinars-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    padding: 0px 5px;
+    flex: 1;
+    margin: 0px 10px 0px 0px;
+    width: 30%;
+    max-width: 400px;
+    height: 85%; /* Fixed height for blog posts */
+    text-align: center;
+    border-radius: 10px;
+    
+    border: 0.5px solid grey;
+}
+
+.webinars-post:hover{
+    box-shadow: -4px -4px 5px grey;
+}
+
+.webinars-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0px;
+    padding: 5px;
+}
+
+.webinars-post p{
+    margin: 0px;
+}
+
 /*Footer or contact me*/
 #contact {
     text-align: center;
@@ -368,7 +429,7 @@ nav ul li a:hover {
 
 #contact h2 {
     margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     font-size: 2.5em;
 }
 
@@ -380,19 +441,28 @@ nav ul li a:hover {
     gap: 20px; /* Adds space between the items */
 }
 
-#contact .email, 
+#contact .email{
+    padding: 5px;
+} 
+
+address p{
+    margin-bottom: -10px;
+}
+
+#contact .email a{
+    text-decoration: none;
+    color: #333;
+    font-style: normal;
+}
+
 #contact .social-media {
     padding: 5px;
 }
 
-#contact .social-media{
-    margin-bottom: 50px;
-}
-
 .social-media a {
     text-decoration: none;
-    margin: 0 10px;
-
+    margin-top: 5px;
+    margin-bottom: 40px;
     display: inline-block;
     transition: transform 0.5s ease;
 }
