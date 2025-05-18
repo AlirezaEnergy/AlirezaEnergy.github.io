@@ -387,8 +387,8 @@ nav ul li a:hover {
     margin-bottom: 0px;
     padding: 0px;
     max-width: 700px;
-    height: 340px;
-    max-height: 500px;
+    height: 350px;
+    max-height: 400px;
 }
 
 .webinars-post {
@@ -401,7 +401,7 @@ nav ul li a:hover {
     margin: 0px 10px 0px 0px;
     width: 30%;
     max-width: 400px;
-    height: 85%; /* Fixed height for blog posts */
+    height: 75%; /* Fixed height for blog posts */
     text-align: center;
     border-radius: 10px;
     border: 0.5px solid grey;
