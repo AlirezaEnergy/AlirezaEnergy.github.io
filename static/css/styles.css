@@ -177,6 +177,7 @@ nav ul li a:hover {
     margin-top: 0px;
     margin-bottom: 0px;
     color: grey;
+    text-align: center;
 }
 
 .sub-header a{
@@ -387,6 +388,7 @@ nav ul li a:hover {
     padding: 0px;
     max-width: 700px;
     height: 400px;
+    max-height: 500px;
 }
 
 .webinars-post {
@@ -478,7 +480,7 @@ address p{
 
 /* blog page */
 #article{
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -496,7 +498,7 @@ address p{
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px;
-    width: 75%;
+    width: 85%;
     max-width: 800px;
     display: flex;
     justify-content: space-between;
