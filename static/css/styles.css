@@ -935,6 +935,351 @@ address p {
 }
 
 /* =============================================
+   RESPONSIVE — HAMBURGER BUTTON
+   ============================================= */
+
+/* Scroll margin so fixed nav doesn't hide section headings */
+section {
+    scroll-margin-top: var(--nav-height);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+    z-index: 10;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--text-muted);
+    border-radius: 2px;
+    transition: transform 0.28s ease, opacity 0.28s ease;
+}
+
+.nav-toggle.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.nav-toggle.open span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+.nav-toggle.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* =============================================
+   RESPONSIVE — MOBILE (≤767px)
+   ============================================= */
+@media (max-width: 767px) {
+
+    /* Switch nav to sticky so no padding offset is needed */
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    main {
+        padding-top: 0;
+    }
+
+    section {
+        scroll-margin-top: 0;
+    }
+
+    nav {
+        height: auto;
+        padding: 14px 16px;
+        flex-direction: column;
+        align-items: stretch;
+        position: relative;
+    }
+
+    /* Show hamburger button */
+    .nav-toggle {
+        display: flex;
+        align-self: flex-end;
+        position: absolute;
+        top: 18px;
+        right: 16px;
+    }
+
+    /* Nav brand / title placeholder space */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 2px;
+        padding: 10px 0 4px;
+        border-top: 1px solid rgba(6, 182, 212, 0.2);
+        margin-top: 10px;
+    }
+
+    nav ul.nav-open {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 9px 12px;
+        font-size: 0.92rem;
+        border-radius: 6px;
+    }
+
+    #resume-link {
+        margin-top: 4px;
+        text-align: center;
+        display: block;
+    }
+
+    /* Hero */
+    #home {
+        padding: 48px 20px 56px;
+        min-height: calc(100vh - 48px);
+    }
+
+    .pic-container {
+        height: 160px;
+        width: 160px;
+        margin-bottom: 20px;
+    }
+
+    .intro-text h1 {
+        font-size: 1.8em;
+    }
+
+    .intro-text p {
+        font-size: 1em;
+        margin-bottom: 24px;
+    }
+
+    .stat-badge {
+        font-size: 0.78rem;
+        padding: 5px 12px;
+    }
+
+    /* Section padding */
+    #skills, #education, #current-research,
+    #projects, #blog, #webinars {
+        padding: 48px 16px;
+    }
+
+    #contact {
+        padding: 40px 16px 32px;
+    }
+
+    section h2 {
+        font-size: 1.65em;
+    }
+
+    /* Skills — allow 2 per row */
+    .skills-container {
+        max-width: 100%;
+        gap: 12px;
+    }
+
+    .skill-item {
+        min-width: 120px;
+        max-width: 155px;
+        padding: 14px 10px 12px;
+    }
+
+    .skill-item img {
+        max-width: 54px;
+        height: 54px;
+    }
+
+    /* Timeline */
+    .timeline {
+        padding-left: 24px;
+    }
+
+    /* Blog / Webinars */
+    .blog-container,
+    .webinars-container {
+        gap: 12px;
+        max-width: 100%;
+    }
+
+    .blog-post,
+    .webinars-post {
+        min-width: 140px;
+    }
+
+    /* Projects */
+    .projects-container {
+        max-width: 100%;
+    }
+
+    .project-details {
+        padding: 16px;
+    }
+}
+
+/* =============================================
+   RESPONSIVE — SMALL MOBILE (≤480px)
+   ============================================= */
+@media (max-width: 480px) {
+
+    .pic-container {
+        height: 136px;
+        width: 136px;
+    }
+
+    .intro-text h1 {
+        font-size: 1.5em;
+    }
+
+    .stat-badge {
+        font-size: 0.72rem;
+        padding: 4px 10px;
+    }
+
+    /* Skills: 2 per row */
+    .skill-item {
+        flex: 0 1 calc(50% - 8px);
+        min-width: 100px;
+        max-width: none;
+    }
+
+    /* Blog / Webinar cards: 1 per row */
+    .blog-post,
+    .webinars-post {
+        flex: 1 1 100%;
+        min-width: unset;
+        max-width: 100%;
+    }
+
+    .blog-post img,
+    .webinars-post img {
+        height: 160px;
+    }
+
+    /* Projects */
+    .project-title {
+        font-size: 0.87rem;
+        padding: 12px 14px;
+    }
+
+    .publisher-badge {
+        font-size: 0.62rem;
+        padding: 2px 6px;
+    }
+
+    /* Timeline */
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-content {
+        padding: 11px 14px;
+    }
+
+    .timeline-degree {
+        font-size: 0.95rem;
+    }
+}
+
+/* =============================================
+   RESPONSIVE — TABLET (768px–1023px)
+   ============================================= */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .intro-text h1 {
+        font-size: 2em;
+    }
+
+    .skills-container {
+        max-width: 640px;
+        gap: 14px;
+    }
+
+    .skill-item {
+        min-width: 130px;
+        max-width: 170px;
+    }
+
+    .blog-container,
+    .webinars-container {
+        max-width: 640px;
+        gap: 14px;
+    }
+
+    .blog-post,
+    .webinars-post {
+        min-width: 155px;
+        max-width: 195px;
+    }
+
+    .projects-container {
+        max-width: 680px;
+    }
+
+    .timeline {
+        max-width: 580px;
+    }
+
+    .research-list {
+        max-width: 580px;
+    }
+}
+
+/* =============================================
+   RESPONSIVE — LARGE SCREENS (≥1200px)
+   ============================================= */
+@media (min-width: 1200px) {
+
+    .skills-container {
+        max-width: 960px;
+        gap: 20px;
+    }
+
+    .skill-item {
+        max-width: 220px;
+    }
+
+    .blog-container,
+    .webinars-container {
+        max-width: 960px;
+        gap: 20px;
+    }
+
+    .blog-post,
+    .webinars-post {
+        max-width: 280px;
+    }
+
+    .blog-post img,
+    .webinars-post img {
+        height: 170px;
+    }
+
+    .projects-container {
+        max-width: 860px;
+    }
+
+    .timeline,
+    .research-list {
+        max-width: 700px;
+    }
+}
+
+/* =============================================
    BLOG ARTICLE PAGE STYLES
    ============================================= */
 #article {

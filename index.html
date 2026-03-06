@@ -22,14 +22,19 @@
 
     <header>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Expertise</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Research</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#webinars">Webinars</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="#home" onclick="closeNav()">Home</a></li>
+                <li><a href="#skills" onclick="closeNav()">Expertise</a></li>
+                <li><a href="#education" onclick="closeNav()">Education</a></li>
+                <li><a href="#projects" onclick="closeNav()">Research</a></li>
+                <li><a href="#blog" onclick="closeNav()">Blog</a></li>
+                <li><a href="#webinars" onclick="closeNav()">Webinars</a></li>
+                <li><a href="#contact" onclick="closeNav()">Contact</a></li>
                 <li><a href="https://drive.google.com/file/d/1zMY2hWXJ9EhiJ2OGEAzLMiRDbCXMllhf/view?usp=sharing" target="_blank" id="resume-link" rel="noopener noreferrer">Resume</a></li>
             </ul>
         </nav>
@@ -396,6 +401,31 @@
 
 
     <script>
+        // Hamburger nav toggle
+        function toggleNav() {
+            const menu = document.getElementById('nav-menu');
+            const btn = document.getElementById('nav-toggle');
+            const isOpen = menu.classList.toggle('nav-open');
+            btn.classList.toggle('open', isOpen);
+            btn.setAttribute('aria-expanded', isOpen);
+        }
+
+        function closeNav() {
+            const menu = document.getElementById('nav-menu');
+            const btn = document.getElementById('nav-toggle');
+            menu.classList.remove('nav-open');
+            btn.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+        }
+
+        // Close nav when clicking outside on mobile
+        document.addEventListener('click', function(e) {
+            const header = document.querySelector('header');
+            if (!header.contains(e.target)) {
+                closeNav();
+            }
+        });
+
         // Project expand/collapse
         function toggleDetails(element) {
             const details = element.nextElementSibling;
