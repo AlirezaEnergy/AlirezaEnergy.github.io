@@ -1031,6 +1031,7 @@ section {
     nav ul li {
         margin: 0;
         width: 100%;
+        text-align: center;
     }
 
     nav ul li a {
@@ -1039,6 +1040,7 @@ section {
         padding: 9px 12px;
         font-size: 0.92rem;
         border-radius: 6px;
+        text-align: center;
     }
 
     #resume-link {
