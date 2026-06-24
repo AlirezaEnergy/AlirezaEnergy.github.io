@@ -4,7 +4,7 @@ An interactive browser tool for visualizing direct sunlight inside a room — ho
 
 Built around a geometric model: a south-facing window in a box-shaped room, illuminated by an analytically-computed sun position (no external solar data or network access required).
 
-**[Live demo →](https://yourusername.github.io/sunraycontrol)**
+**[Live demo →](https://alirezaenergy.github.io/tools/sunraycontrol/index.html)**
 
 ---
 
