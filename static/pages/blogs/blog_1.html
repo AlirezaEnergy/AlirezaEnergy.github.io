@@ -24,14 +24,21 @@
     
     <header>
         <nav>
-            <ul>
-                <li><a href="../../../index.html">Home</a></li>
-                <li><a href="../../../#skills">Skills</a></li>
-                <li><a href="../../../#portfolio">Portfolio</a></li>
-                <li><a href="../../../#blog">Blog</a></li>
-                <li><a href="../../../#webinars">Webinars</a></li>
-                <li><a href="../../../#contact">Contact</a></li>
-                <li><a href="https://drive.google.com/file/d/1zMY2hWXJ9EhiJ2OGEAzLMiRDbCXMllhf/view?usp=sharing" target="_blank" id="resume-link">Resume</a></li>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="../../../" onclick="closeNav()">Home</a></li>
+                <li><a href="../../../#skills" onclick="closeNav()">Expertise</a></li>
+                <li><a href="../../../#education" onclick="closeNav()">Education</a></li>
+                <li><a href="../../../#projects" onclick="closeNav()">Research</a></li>
+                <li><a href="../../../#tools" onclick="closeNav()">Tools</a></li>
+                <li><a href="../../../#blog" onclick="closeNav()">Blog</a></li>
+                <li><a href="../../../#webinars" onclick="closeNav()">Webinars</a></li>
+                <li><a href="../../../#contact" onclick="closeNav()">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/1zMY2hWXJ9EhiJ2OGEAzLMiRDbCXMllhf/view?usp=sharing" target="_blank" id="resume-link" rel="noopener noreferrer">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -41,7 +48,7 @@
 
 
     <main>
-        <section id="article">
+        <section id="article" class="visible">
             <h1 style="font-size: 1.6em; text-align: center;">Why a Perpetual Motion Machine Won't Work?</h1>
             <div class="article-img" style="width: 75%; max-width: 600px;">
                 <img src="../../img/Slide1.JPG">
@@ -166,8 +173,29 @@
 
 
     <script>
+        function toggleNav() {
+            const menu = document.getElementById('nav-menu');
+            const btn = document.getElementById('nav-toggle');
+            const isOpen = menu.classList.toggle('nav-open');
+            btn.classList.toggle('open', isOpen);
+            btn.setAttribute('aria-expanded', isOpen);
+        }
+
+        function closeNav() {
+            const menu = document.getElementById('nav-menu');
+            const btn = document.getElementById('nav-toggle');
+            menu.classList.remove('nav-open');
+            btn.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+        }
+
+        document.addEventListener('click', function(e) {
+            const header = document.querySelector('header');
+            if (!header.contains(e.target)) closeNav();
+        });
+
         document.querySelector('.homepage-butt').addEventListener('click', function() {
-          window.location.href = '../../../index.html'; // Change this path as needed
+            window.location.href = '../../../index.html';
         });
     </script>
 

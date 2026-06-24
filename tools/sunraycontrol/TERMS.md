@@ -32,4 +32,4 @@ These terms may be updated at any time. Continued use of the tool after any upda
 
 ## 7. Contact
 
-For questions or feedback, please open an issue on the [GitHub repository](https://github.com/AlirezaEnergy/AlirezaEnergy.github.io/tree/master/tools/sunraycontrol).
+For questions or feedback, please open an issue on the [GitHub repository](https://github.com/yourusername/sunraycontrol).

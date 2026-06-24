@@ -1096,6 +1096,20 @@ input[type="range"].slider::-moz-range-thumb {
 
 #btn-reset-play:hover { background: var(--accent-dark); }
 
+/* ---------------- Footer ---------------- */
+
+.app-footer {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 11px;
+  color: var(--muted);
+  border-top: 1px solid var(--card-border);
+}
+
+.app-footer a { color: var(--muted); text-decoration: none; }
+.app-footer a:hover { color: var(--text); }
+.app-footer-sep { margin: 0 6px; }
+
 /* ---------------- Responsive ---------------- */
 
 @media (max-width: 1100px) {
